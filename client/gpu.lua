@@ -1,7 +1,8 @@
 local QBCore = exports['qb-core']:GetCoreObject()
+local Inventory = exports.ox_inventory
 
 function CheckGTX480()
-    if QBCore.Functions.HasItem('shitgpu') then
+    if Inventory:Search('count','shitgpu') then
         return false
     else
         return true
@@ -9,7 +10,7 @@ function CheckGTX480()
 end
 
 function CheckGTX1050()
-    if QBCore.Functions.HasItem('1050gpu') then
+    if Inventory:Search('count','1050gpu') then
         return false
     else
         return true
@@ -17,7 +18,7 @@ function CheckGTX1050()
 end
 
 function CheckGTX1060()
-    if QBCore.Functions.HasItem('1060gpu') then
+    if Inventory:Search('count','1060gpu') then
         return false
     else
         return true
@@ -25,7 +26,7 @@ function CheckGTX1060()
 end
 
 function CheckGTX1080()
-    if QBCore.Functions.HasItem('1080gpu') then
+    if Inventory:Search('count','1080gpu') then
         return false
     else
         return true
@@ -33,7 +34,7 @@ function CheckGTX1080()
 end
 
 function CheckRTX2080()
-    if QBCore.Functions.HasItem('2080gpu') then
+    if Inventory:Search('count','2080gpu') then
         return false
     else
         return true
@@ -41,7 +42,7 @@ function CheckRTX2080()
 end
 
 function CheckRTX3060()
-    if QBCore.Functions.HasItem('3060gpu') then
+    if Inventory:Search('count','3060gpu') then
         return false
     else
         return true
@@ -49,7 +50,7 @@ function CheckRTX3060()
 end
 
 function CheckRTX4090()
-    if QBCore.Functions.HasItem('4090gpu') then
+    if Inventory:Search('count','4090gpu') then
         return false
     else
         return true
